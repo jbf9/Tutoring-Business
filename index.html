@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>6&ndash;12 Tutoring &middot; Janet Federici &mdash; Private 1:1 Tutoring</title>
+  <meta name="description" content="Private, one-on-one tutoring with Janet Federici for grades 6&ndash;12. SAT &amp; college prep, math, English, select AP courses, and Japanese or Korean." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Design tokens. Edit these in one place to re-theme the whole site.
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sage:   { DEFAULT: '#6D8654', dark: '#566c43', light: '#8aa172', tint: '#e7ecdf' },
+            ink:    { DEFAULT: '#131411', soft: '#3a3b36', mute: '#6f7068' },
+            canvas: '#EDECED',
+            paper:  '#F7F7F6',
+          },
+          fontFamily: {
+            display: ['Fraunces', 'Georgia', 'serif'],
+            body: ['"Hanken Grotesk"', 'system-ui', 'sans-serif'],
+          },
+          maxWidth: { content: '1200px' },
+        },
+      },
+    };
+  </script>
+
+  <!-- Custom styles / animations -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- If JavaScript is disabled, make sure all content is still visible -->
+  <noscript><style>.reveal{opacity:1!important;transform:none!important;}</style></noscript>
+</head>
+
+<body class="bg-canvas text-ink font-body antialiased selection:bg-sage selection:text-white">
+
+  <!-- Grain overlay for warmth -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header id="nav" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+    <nav class="mx-auto max-w-content px-6 lg:px-10 flex items-center justify-between h-20">
+      <a href="#top" class="group font-display text-lg sm:text-xl font-semibold tracking-tight whitespace-nowrap">
+        6&ndash;12 Tutoring 
+        <span class="text-ink-mute font-normal group-hover:text-sage transition-colors">by Janet Federici</span>
+      </a>
+
+      <!-- Desktop links -->
+      <ul class="hidden md:flex items-center gap-9 text-sm font-medium">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#process" class="nav-link">How It Works</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-ink text-canvas px-5 py-2.5 hover:bg-sage transition-colors duration-300">
+            Get in touch
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+        </li>
+      </ul>
+
+      <!-- Mobile toggle -->
+      <button id="menuBtn" class="md:hidden relative w-10 h-10 -mr-2 flex items-center justify-center" aria-label="Open menu" aria-expanded="false">
+        <span class="burger"></span>
+      </button>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden bg-paper border-t border-black/5">
+      <ul class="px-6 py-6 space-y-1 text-lg font-display">
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#process" class="mobile-link">How It Works</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+        <li class="pt-3">
+          <a href="#contact" class="block text-center rounded-full bg-sage text-white py-3 font-body text-base">Get in touch</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="relative overflow-hidden pt-36 pb-24 lg:pt-48 lg:pb-32">
+      <!-- soft decorative blob -->
+      <div class="hero-orb" aria-hidden="true"></div>
+
+      <div class="mx-auto max-w-content px-6 lg:px-10 relative">
+        <p class="reveal text-sm tracking-[0.25em] uppercase text-sage font-semibold mb-6">
+          Private &middot; One&#8209;on&#8209;one &middot; Grades 6&ndash;12
+        </p>
+
+        <h1 class="reveal font-display font-light leading-[0.98] tracking-tight text-5xl sm:text-6xl lg:text-[5.5rem] max-w-5xl">
+          Thoughtful tutoring that meets
+          <span class="italic text-sage">every</span> student
+          where they are.
+        </h1>
+
+        <p class="reveal mt-8 max-w-xl text-lg text-ink-soft leading-relaxed">
+          Hi, I&rsquo;m Janet Federici! I work one&#8209;on&#8209;one with middle and high
+          schoolers to build intuitive understanding, steady confidence, and study habits 
+          that outlast any single test.
+        </p>
+
+        <div class="reveal mt-10 flex flex-wrap items-center gap-4">
+          <a href="#contact" class="group inline-flex items-center gap-2 rounded-full bg-sage text-white px-7 py-4 text-base font-medium shadow-soft hover:bg-sage-dark transition-all duration-300 hover:-translate-y-0.5">
+            Get in touch
+            <span class="transition-transform group-hover:translate-x-1" aria-hidden="true">&rarr;</span>
+          </a>
+          <a href="#services" class="inline-flex items-center gap-2 rounded-full border border-ink/20 px-7 py-4 text-base font-medium hover:border-sage hover:text-sage transition-colors duration-300">
+            View services &amp; rates
+          </a>
+        </div>
+
+        <!-- quick stats strip -->
+        <div class="reveal mt-16 grid grid-cols-2 sm:grid-cols-4 gap-px bg-ink/10 rounded-2xl overflow-hidden border border-ink/10">
+          <div class="bg-canvas px-6 py-6">
+            <div class="font-display text-3xl">1:1</div>
+            <div class="text-sm text-ink-mute mt-1">Always personal</div>
+          </div>
+          <div class="bg-canvas px-6 py-6">
+            <div class="font-display text-3xl">6&ndash;12</div>
+            <div class="text-sm text-ink-mute mt-1">Grade levels</div>
+          </div>
+          <div class="bg-canvas px-6 py-6">
+            <div class="font-display text-3xl">5</div>
+            <div class="text-sm text-ink-mute mt-1">Subject areas offered</div>
+          </div>
+          <div class="bg-canvas px-6 py-6">
+            <div class="font-display text-3xl">2</div>
+            <div class="text-sm text-ink-mute mt-1">Languages offered</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="py-24 lg:py-32 bg-paper border-y border-black/5">
+      <div class="mx-auto max-w-content px-6 lg:px-10">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+
+          <!-- Image column -->
+          <div class="reveal lg:col-span-5">
+            <div class="relative">
+              <!-- REPLACE: drop your photo at assets/janet1.jpg (and remove the placeholder div) -->
+              <img src="assets/janet1.jpg" alt="Janet Federici" class="aspect-[4/5] rounded-3xl w-full object-cover ring-1 ring-black/5 shadow-soft" />
+              <!-- floating accent card -->
+              <div class="absolute -bottom-6 -right-4 sm:-right-6 bg-ink text-canvas rounded-2xl px-6 py-5 shadow-lg max-w-[200px]">
+                <p class="font-display text-lg leading-tight">&ldquo;Patient, clear, and genuinely invested.&rdquo;</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text column -->
+          <div class="reveal lg:col-span-7">
+            <p class="section-eyebrow"><span>01</span> About</p>
+            <h2 class="font-display font-light text-4xl lg:text-5xl leading-tight mt-4 max-w-xl">
+              Tutoring built on curiosity, structure, and trust.
+            </h2>
+
+            <!-- EDITABLE: your introduction -->
+            <div class="mt-6 space-y-4 text-lg text-ink-soft leading-relaxed max-w-2xl">
+              <p></p>
+                <em>I believe every student already has what they need to succeed; my job is
+                to help them realize that.</em> 
+                <p>
+                </p>
+                Whether we're untangling a geometry proof,
+                editing a college essay, or diving into a new language, I tailor each session 
+                to how your student learns best (and I push them a little).
+              </p>
+              <p>
+                Sessions are structured, in-depth, and always encouraging. We set clear
+                goals, track your progress, and celebrate your big and small wins along the way.
+              </p>
+            </div>
+
+            <!-- Education & experience -->
+            <div class="mt-10 grid sm:grid-cols-2 gap-px bg-black/10 rounded-2xl overflow-hidden border border-black/10">
+              <div class="bg-paper p-6">
+                <h3 class="font-display text-xl mb-4 flex items-center gap-2">
+                  <svg class="w-5 h-5 text-sage" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path d="M7 10.5V15c0 1.5 2.2 2.5 5 2.5s5-1 5-2.5v-4.5" stroke-linecap="round"/></svg>
+                  Education
+                </h3>
+                <!-- EDITABLE list -->
+                <ul class="space-y-4 text-sm">
+                  <li class="cred">
+                    <span class="cred-year">2026</span>
+                    <div>
+                      <p class="font-semibold text-ink">B.A. &mdash; University of Notre Dame</p>
+                      <p class="mt-1.5 flex flex-wrap gap-1.5">
+                        <span class="inline-block text-xs font-semibold bg-sage-tint text-sage-dark px-2 py-0.5 rounded-md">3.8 GPA</span>
+                        <span class="inline-block text-xs font-semibold bg-sage-tint text-sage-dark px-2 py-0.5 rounded-md">Fulbright Scholar</span>
+                        <span class="inline-block text-xs font-semibold bg-sage-tint text-sage-dark px-2 py-0.5 rounded-md">x3 Dean's List</span>
+                      </p>
+                      <p class="text-ink-mute">Major in Japanese Language and Literature &amp; Linguistics</p>
+                      <p class="text-ink-mute">Courses in engineering, mathematics, and chemistry as electives</p>
+                    </div>
+                  </li>
+                  <li class="cred">
+                    <span class="cred-year">2025</span>
+                    <div>
+                      <p class="font-semibold text-ink">Nanzan University in Nagoya, Japan</p>
+                      <p class="text-ink-mute">Spring 2025 semester</p>
+                    </div>
+                  </li>
+                  <li class="cred">
+                    <span class="cred-year">2022</span>
+                    <div>
+                      <p class="font-semibold text-ink">Dallas High School</p>
+                      <p class="mt-1.5 flex flex-wrap gap-1.5">
+                        <span class="inline-block text-xs font-semibold bg-sage-tint text-sage-dark px-2 py-0.5 rounded-md">4.0 GPA</span>
+                        <span class="inline-block text-xs font-semibold bg-sage-tint text-sage-dark px-2 py-0.5 rounded-md">Salutatorian</span>
+                      <p class="text-ink-mute">Proud Dallas PA local</p>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-paper p-6">
+                <h3 class="font-display text-xl mb-4 flex items-center gap-2">
+                  <svg class="w-5 h-5 text-sage" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18M5 8l7-4 7 4M5 8v8l7 4 7-4V8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  Experience
+                </h3>
+                <!-- EDITABLE list -->
+                <ul class="space-y-4 text-sm">
+                  <li class="cred">
+                    <span class="cred-year">6 yrs</span>
+                    <div>
+                      <p class="font-semibold text-ink">Private 1:1 tutoring</p>
+                      <p class="text-ink-mute">
+                        Experience tutoring grades 3&ndash;12 online and in-person, 
+                        now specializing in middle school and high school</p>
+                    </div>
+                  </li>
+                  <li class="cred">
+                    <span class="cred-year">400 hrs</span>
+                    <div>
+                      <p class="font-semibold text-ink">Teaching...</p>
+                      <p class="text-ink-mute">English Language Arts, algebra, geometry, trigonometry, and English as a Second Language</p>
+                    </div>
+                  <li class="cred">
+                    <span class="cred-year">2 yrs</span>
+                    <div>
+                      <p class="font-semibold text-ink">College admissions guidance</p>
+                      <p class="text-ink-mute">
+                        Volunteered at Matriculate, a non-profit connecting high-achieving, 
+                        low-income high schoolers with highly-trained undergraduate advisors</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section id="services" class="py-24 lg:py-32">
+      <div class="mx-auto max-w-content px-6 lg:px-10">
+        <div class="reveal max-w-2xl">
+          <p class="section-eyebrow"><span>02</span> Services &amp; Rates</p>
+          <h2 class="font-display font-light text-4xl lg:text-5xl leading-tight mt-4">
+            Five focused programs, one personal approach.
+          </h2>
+          <p class="mt-5 text-lg text-ink-soft leading-relaxed">
+            Click any card to see what&rsquo;s included and a note about my experience in
+            that subject. Rates are per 50-min sessions.
+          </p>
+        </div>
+
+        <!-- Cards grid -->
+        <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 items-start">
+
+          <!-- 1. SAT & College -->
+          <article class="service-card reveal" data-service>
+            <button class="service-head" aria-expanded="false">
+              <span class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l9-4 9 4-9 4-9-4z" stroke-linejoin="round"/><path d="M7 10.5V15c0 1.6 2.2 2.8 5 2.8s5-1.2 5-2.8v-4.5" stroke-linecap="round"/><path d="M21 8v5" stroke-linecap="round"/></svg>
+              </span>
+              <span class="flex-1">
+                <span class="service-title">SAT &amp; College Application Prep</span>
+                <span class="service-price">$40<span>/50 mins</span></span>
+              </span>
+              <span class="service-chev" aria-hidden="true">+</span>
+            </button>
+            <div class="service-body">
+              <div class="service-body-inner">
+                <p class="service-label">What you get</p>
+                <!-- EDITABLE -->
+                <p><strong><em>SAT Success:</em></strong> Targeted study plan for reading and math with daily practice problems, bi-weekly full-length practice tests, and test-taking strategies.</p>
+                <p><strong><em>College App Support:</em></strong> Balanced college list-building; essay brainstorming, drafting, and editing; and alumni interview prep.</p>
+                </p>
+                <p class="service-label mt-4">My background</p>
+                <!-- EDITABLE -->
+                <p>I scored in the 99th percentile on the SAT with a 1450 (770 Reading, 680 Math). I understand the nuances of each section and can provide tailored strategies for success.
+                  For college admissions, I was a tour guide at my university and a college advising fellow at Matriculate, an organization that connects high schoolers with college students highly-trained in admissions.
+                  I have a knack for punchy, impactful writing that moves admissions officers with your student's story.
+                </p>
+                <p class="service-label mt-4">Special Package: 2 sessions/week for 3 months at $850
+                <!-- EDITABLE -->
+                <p>To ensure your student's college testing and application process is cohesive, I offer a package of 2 sessions per week 
+                  (one SAT and one college app) for 3 months for $850. Reach out to discuss if this might be a good fit for your student!
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. HS Math & English -->
+          <article class="service-card reveal" data-service>
+            <button class="service-head" aria-expanded="false">
+              <span class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 5h7v15H6a2 2 0 0 1-2-2V5z" stroke-linejoin="round"/><path d="M20 5h-7v15h5a2 2 0 0 0 2-2V5z" stroke-linejoin="round"/><path d="M11 5c0-1 1-2 2-2" stroke-linecap="round"/></svg>
+              </span>
+              <span class="flex-1">
+                <span class="service-title">High School Math &amp; English</span>
+                <span class="service-price">$30<span>/50 mins</span></span>
+              </span>
+              <span class="service-chev" aria-hidden="true">+</span>
+            </button>
+            <div class="service-body">
+              <div class="service-body-inner">
+                <p class="service-label">What you get</p>
+                <p>
+                  Homework support, concept reteaching, writing feedback, and test prep for coursework.
+                  Expertise in English Language Arts (literature, writing papers, grammar and vocabulary) 
+                  and math (Algebra 1 and 2, geometry, trigonometry, calculus).
+                </p>
+                <p class="service-label mt-4">My background</p>
+                <p>I have tutored high school students in both math and English for 6 years, accumulating hundreds of hours of experience 
+                  helping them improve their grades and build confidence in their abilities. It's the best feeling in the world helping 
+                  my students get a 100% on a test after thinking they wouldn't do well!</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. AP Courses -->
+          <article class="service-card reveal" data-service>
+            <button class="service-head" aria-expanded="false">
+              <span class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l2.5 5.2 5.5.8-4 3.9 1 5.6-5-2.7-5 2.7 1-5.6-4-3.9 5.5-.8L12 3z" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="flex-1">
+                <span class="service-title">Select AP Courses</span>
+                <span class="service-price">$35<span>/50 mins</span></span>
+              </span>
+              <span class="service-chev" aria-hidden="true">+</span>
+            </button>
+            <div class="service-body">
+              <div class="service-body-inner">
+                <p class="service-label">What you get</p>
+                <p>A mixture of homework help and structured exam preparation, including practice exams, 
+                  FRQ/essay strategy, pacing, and review for your AP courses.</p>
+                <p class="service-label mt-4">Subjects &amp; background</p>
+                <p><strong><em>AP Subjects Offered (my score):</em></strong> AP Biology (5), AP US Government and Politics (5), 
+                  AP Statistics (4), AP English Literature (4), AP English Language (4)</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. MS Math & English -->
+          <article class="service-card reveal" data-service>
+            <button class="service-head" aria-expanded="false">
+              <span class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19V6a2 2 0 0 1 2-2h9l5 5v10" stroke-linejoin="round"/><path d="M15 4v5h5" stroke-linejoin="round"/><path d="M8 13h8M8 16h5" stroke-linecap="round"/></svg>
+              </span>
+              <span class="flex-1">
+                <span class="service-title">Middle School Math &amp; English</span>
+                <span class="service-price">$30<span>/50 mins</span></span>
+              </span>
+              <span class="service-chev" aria-hidden="true">+</span>
+            </button>
+            <div class="service-body">
+              <div class="service-body-inner">
+                <p class="service-label">What you get</p>
+                <p>Homework support, concept reteaching, writing feedback, and test prep for math (Algebra 1 and 2, advanced math), 
+                  English Language Arts, geography, and music. Let's build strong foundations and study skills for the transition ahead!</p>
+                <p class="service-label mt-4">My background</p>
+                <p>Experienced in working with diverse learners to first meet them where they are and then build from there! I know
+                  how tough middle school is both socially and academically, so I prioritize creating a supportive, encouraging 
+                  environment for my middle school students to grow their skills and confidence.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Japanese or Korean -->
+          <article class="service-card reveal" data-service>
+            <button class="service-head" aria-expanded="false">
+              <span class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18" stroke-linecap="round"/></svg>
+              </span>
+              <span class="flex-1">
+                <span class="service-title">Japanese or Korean</span>
+                <span class="service-price">$30<span>/50 mins</span></span>
+              </span>
+              <span class="service-chev" aria-hidden="true">+</span>
+            </button>
+            <div class="service-body">
+              <div class="service-body-inner">
+                <p class="service-label">What you get</p>
+                <p>Has your student been reading the latest manga at the Back Mountain Library? Gotten into K-Pop?
+                  These structured language lessons are designed for beginners to build a strong foundation. We'll start 
+                  from the basics of reading and pronunciation and build up to writing, grammar, and conversation practice. 
+                  (Textbook for Japanese: Tobira; for Korean: Yonsei)
+                </p>
+                <p class="service-label mt-4">My background</p>
+                <p>Having earned a bachelors degree in Japanese and studied abroad in Japan for 5 months, I'm well-equipped
+                  to guide students through the basics and nuances of Japanese. I've also studied Korean since I was in 8th grade
+                  (8+ years now!), so I have a deep technical and intuitive grasp of the language.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- CTA card to fill the 6th grid slot -->
+          <article class="reveal rounded-3xl bg-ink text-canvas p-8 flex flex-col justify-between min-h-[200px]">
+            <div>
+              <p class="font-display text-2xl leading-snug">Not sure which fits?</p>
+              <p class="mt-3 text-canvas/70 text-sm leading-relaxed">Tell me about the student and I&rsquo;ll recommend a plan.</p>
+            </div>
+            <a href="#contact" class="mt-6 inline-flex items-center gap-2 rounded-full bg-sage text-white px-5 py-3 text-sm font-medium self-start hover:bg-sage-light transition-colors">
+              Get in touch <span aria-hidden="true">&rarr;</span>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section id="process" class="py-24 lg:py-32 bg-sage-tint border-t border-black/5">
+      <div class="mx-auto max-w-content px-6 lg:px-10">
+        <div class="reveal max-w-2xl">
+          <p class="section-eyebrow"><span>03</span> How It Works</p>
+          <h2 class="font-display font-light text-4xl lg:text-5xl leading-tight mt-4">
+            How to start tutoring with me.
+          </h2>
+          <p class="mt-5 text-lg text-ink-soft leading-relaxed">
+            Here&rsquo;s exactly what to expect when you reach out.
+          </p>
+        </div>
+
+        <div class="mt-14 grid grid-cols-1 lg:grid-cols-[1fr_48px_1fr_48px_1fr] items-start gap-y-0 lg:gap-y-6">
+
+          <!-- Step 1 -->
+          <div class="reveal bg-paper rounded-3xl border border-black/8 p-7 flex flex-col gap-4">
+            <span class="font-display text-4xl text-sage/30 font-light leading-none">01</span>
+            <div>
+              <p class="font-display text-xl font-semibold text-ink">Reach out</p>
+              <p class="mt-2 text-sm text-ink-soft leading-relaxed">Fill out the contact form below with a bit about the student and what you&rsquo;re looking for. I&rsquo;ll get back to you within a couple of days.</p>
+            </div>
+          </div>
+
+          <!-- Arrow 1→2 -->
+          <div class="flex items-center justify-center py-3 lg:py-0 lg:pt-10">
+            <svg class="w-5 h-5 text-sage lg:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M6 13l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="w-5 h-5 text-sage hidden lg:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="reveal bg-paper rounded-3xl border border-black/8 p-7 flex flex-col gap-4">
+            <span class="font-display text-4xl text-sage/30 font-light leading-none">02</span>
+            <div>
+              <p class="font-display text-xl font-semibold text-ink">Trial lesson</p>
+              <p class="mt-2 text-sm text-ink-soft leading-relaxed">
+                We'll start with a 50-minute trial session in person at the Back Mountain Memorial Library or online. The student and I will get to know each other, and
+                we'll build a study plan. Trial lessons are billed at <strong>half the regular hourly rate</strong>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Arrow 2→3 -->
+          <div class="flex items-center justify-center py-3 lg:py-0 lg:pt-10">
+            <svg class="w-5 h-5 text-sage lg:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M6 13l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="w-5 h-5 text-sage hidden lg:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="reveal bg-paper rounded-3xl border border-black/8 p-7 flex flex-col gap-4">
+            <span class="font-display text-4xl text-sage/30 font-light leading-none">03</span>
+            <div>
+              <p class="font-display text-xl font-semibold text-ink">Schedule weekly lessons</p>
+              <p class="mt-2 text-sm text-ink-soft leading-relaxed">If it feels like a good fit, we'll lock in a recurring weekly slot, a consistent time each week that works for your student&rsquo;s schedule.</p>
+            </div>
+          </div>
+
+          <!-- Arrow 3→4 (mobile only — row wraps on desktop) -->
+          <div class="flex items-center justify-center py-3 lg:hidden">
+            <svg class="w-5 h-5 text-sage" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M6 13l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="reveal bg-paper rounded-3xl border border-black/8 p-7 flex flex-col gap-4">
+            <span class="font-display text-4xl text-sage/30 font-light leading-none">04</span>
+            <div>
+              <p class="font-display text-xl font-semibold text-ink">Monthly payment</p>
+              <p class="mt-2 text-sm text-ink-soft leading-relaxed">Payment is collected once a month for that month&rsquo;s sessions. Accepted methods:</p>
+              <p class="mt-2.5 flex flex-wrap gap-1.5">
+                <span class="inline-block text-xs font-semibold bg-sage text-white px-2 py-0.5 rounded-md">Zelle</span>
+                <span class="inline-block text-xs font-semibold bg-sage text-white px-2 py-0.5 rounded-md">PayPal</span>
+                <span class="inline-block text-xs font-semibold bg-sage text-white px-2 py-0.5 rounded-md">Venmo</span>
+                <span class="inline-block text-xs font-semibold bg-sage text-white px-2 py-0.5 rounded-md">Check</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Arrow 4→5 -->
+          <div class="flex items-center justify-center py-3 lg:py-0 lg:pt-10">
+            <svg class="w-5 h-5 text-sage lg:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M6 13l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="w-5 h-5 text-sage hidden lg:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="reveal lg:col-span-3 bg-ink text-canvas rounded-3xl p-7 flex flex-col gap-4">
+            <span class="font-display text-4xl text-sage-light/40 font-light leading-none">05</span>
+            <div>
+              <p class="font-display text-xl font-semibold">Watch your student thrive!</p>
+              <p class="mt-2 text-sm text-canvas/70 leading-relaxed">I can't wait to see the progress your student makes. Let's help them achieve their goals!</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="py-24 lg:py-32 bg-paper border-t border-black/5">
+      <div class="mx-auto max-w-content px-6 lg:px-10">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-16">
+
+          <!-- Intro column -->
+          <div class="reveal lg:col-span-5">
+            <p class="section-eyebrow"><span>04</span> Contact</p>
+            <h2 class="font-display font-light text-4xl lg:text-5xl leading-tight mt-4">
+              I'm excited to meet you and your student!
+            </h2>
+            <p class="mt-5 text-lg text-ink-soft leading-relaxed max-w-md">
+              Share a few details and I&rsquo;ll get back to you within a few days.
+              No pressure&mdash;just a conversation about what your student needs and how I can help.
+            </p>
+            <div class="mt-8 space-y-3 text-sm text-ink-soft">
+              <p class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-sage shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0z"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg>
+                Sessions by appointment, in person or online
+              </p>
+              <p class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-sage shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                Serving local NEPA &amp; remote students
+              </p>
+            </div>
+            <img src="assets/janet2.jpg" alt="Janet Federici" class="mt-8 rounded-3xl w-full object-cover ring-1 ring-black/5 shadow-soft" />
+          </div>
+
+          <!-- Form column -->
+          <div class="reveal lg:col-span-7">
+            <form id="contactForm" class="bg-canvas rounded-3xl p-6 sm:p-8 ring-1 ring-black/5 shadow-soft" novalidate>
+              <div class="grid sm:grid-cols-2 gap-5">
+                <!-- Name -->
+                <div class="sm:col-span-2">
+                  <label for="name" class="field-label">Name</label>
+                  <input id="name" name="name" type="text" required class="field" placeholder="Your full name" />
+                </div>
+
+                <!-- Email -->
+                <div class="sm:col-span-2">
+                  <label for="email" class="field-label">Email</label>
+                  <input id="email" name="email" type="email" required class="field" placeholder="you@example.com" />
+                </div>
+
+                <!-- Parent or student -->
+                <div>
+                  <span class="field-label">I am the&hellip;</span>
+                  <div class="seg" role="radiogroup" aria-label="Parent or student">
+                    <label class="seg-opt">
+                      <input type="radio" name="role" value="Parent" required />
+                      <span>Parent</span>
+                    </label>
+                    <label class="seg-opt">
+                      <input type="radio" name="role" value="Student" />
+                      <span>Student</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Grade level -->
+                <div>
+                  <span class="field-label">Grade level</span>
+                  <div class="seg" role="radiogroup" aria-label="Grade level">
+                    <label class="seg-opt">
+                      <input type="radio" name="grade" value="Middle School" required />
+                      <span>Middle</span>
+                    </label>
+                    <label class="seg-opt">
+                      <input type="radio" name="grade" value="High School" />
+                      <span>High</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Subjects (multi-select chips) -->
+                <div class="sm:col-span-2">
+                  <span class="field-label">What would you like tutoring in? <span class="text-ink-mute font-normal">(select all that apply)</span></span>
+                  <div class="flex flex-wrap gap-2.5 mt-1" id="subjects">
+                    <label class="chip"><input type="checkbox" name="subjects" value="SAT / College Applications" /><span>SAT / College Apps</span></label>
+                    <label class="chip"><input type="checkbox" name="subjects" value="Math" /><span>Math</span></label>
+                    <label class="chip"><input type="checkbox" name="subjects" value="English" /><span>English</span></label>
+                    <label class="chip"><input type="checkbox" name="subjects" value="AP Courses" /><span>AP Courses</span></label>
+                    <label class="chip"><input type="checkbox" name="subjects" value="Japanese" /><span>Japanese</span></label>
+                    <label class="chip"><input type="checkbox" name="subjects" value="Korean" /><span>Korean</span></label>
+                  </div>
+                </div>
+
+                <!-- Message -->
+                <div class="sm:col-span-2">
+                  <label for="message" class="field-label">Message</label>
+                  <textarea id="message" name="message" rows="4" class="field resize-none" placeholder="Tell me a little about the student, goals, and availability."></textarea>
+                </div>
+              </div>
+
+              <!-- Submit -->
+              <div class="mt-6 flex flex-col sm:flex-row sm:items-center gap-4">
+                <button type="submit" id="submitBtn" class="group inline-flex items-center justify-center gap-2 rounded-full bg-sage text-white px-8 py-4 font-medium shadow-soft hover:bg-sage-dark transition-all duration-300 hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed">
+                  <span class="btn-text">Send message</span>
+                  <span class="btn-spinner hidden" aria-hidden="true"></span>
+                  <span class="transition-transform group-hover:translate-x-1" aria-hidden="true">&rarr;</span>
+                </button>
+                <p id="formStatus" class="text-sm" role="status" aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-ink text-canvas">
+    <div class="mx-auto max-w-content px-6 lg:px-10 py-16">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-10">
+        <div>
+          <a href="#top" class="font-display text-3xl">6&ndash;12 Tutoring</a>
+          <p class="mt-3 text-canvas/60 max-w-sm leading-relaxed">
+            Private, one&#8209;on&#8209;one tutoring with Janet Federici. Thank you for
+            visiting &mdash; I&rsquo;d love to hear from you.
+          </p>
+          <a href="#contact" class="mt-5 inline-flex items-center gap-2 text-sage-light hover:text-white transition-colors">
+            Go to the contact form <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+
+        <!-- Socials -->
+        <div class="flex items-center gap-4">
+          <a href="https://www.linkedin.com/in/janetfederici/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM3.5 8.5h3v12h-3v-12zM9 8.5h2.87v1.64h.04A3.15 3.15 0 0 1 14.76 8.5c3.07 0 3.64 2.02 3.64 4.65v6.85h-3v-6.07c0-1.45-.03-3.3-2.01-3.3-2.02 0-2.33 1.58-2.33 3.2v6.17H9v-12z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/janet.federici.7" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7.5v3H10v6h3v-6h2.5l.5-3H13v-2c0-.55.45-1 1-1z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 text-sm text-canvas/50">
+        <p>&copy; <span id="year"></span> 6&ndash;12 Tutoring by Janet Federici.</p>
+        <p>Made with care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
