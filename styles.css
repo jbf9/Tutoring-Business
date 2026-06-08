@@ -198,6 +198,12 @@ h1.font-display { letter-spacing: -0.02em; }
   font-size: 1.1rem;
   color: var(--sage);
 }
+.wc-price-unit {
+  font-family: "Hanken Grotesk", system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: var(--ink-mute);
+}
 .wc-title {
   font-family: "Fraunces", serif;
   font-size: 1.3rem;
