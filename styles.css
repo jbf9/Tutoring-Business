@@ -167,34 +167,112 @@ h1.font-display { letter-spacing: -0.02em; }
   background: transparent;
 }
 
-/* Workshop cards: side-by-side header + always-visible reserve button */
-.workshop-head-wrap {
+/* ---------- Workshop cards (new layout) ---------- */
+.wc-card {
+  background: var(--paper);
+  border: 1px solid rgba(19, 20, 17, 0.1);
+  border-radius: 1.5rem;
+  padding: 1.4rem 1.5rem 1.25rem;
   display: flex;
+  flex-direction: column;
+}
+.wc-top {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
 }
-.workshop-head-wrap .service-head {
-  flex: 1;
-  width: auto;
-  padding-right: 0.5rem;
+.wc-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: var(--sage-tint);
+  color: var(--sage-dark);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
 }
-.workshop-reserve-btn {
-  flex-shrink: 0;
+.wc-price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--sage);
+}
+.wc-title {
+  font-family: "Fraunces", serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+}
+.wc-desc {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  line-height: 1.55;
+  margin-bottom: 1rem;
+}
+/* Expandable "What's included" using <details> */
+.wc-expand {
+  margin-bottom: 0.85rem;
+}
+.wc-expand summary {
+  list-style: none;
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  border-radius: 9999px;
-  background: var(--sage);
-  color: #fff;
-  padding: 0.45rem 1rem;
-  font-size: 0.8rem;
+  gap: 0.45rem;
+  font-size: 0.875rem;
   font-weight: 600;
-  white-space: nowrap;
-  margin-right: 1.1rem;
-  text-decoration: none;
-  transition: background 0.2s;
+  color: var(--sage);
+  cursor: pointer;
+  user-select: none;
 }
-.workshop-reserve-btn:hover {
-  background: var(--sage-dark);
+.wc-expand summary::-webkit-details-marker { display: none; }
+.wc-expand-icon {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 9999px;
+  border: 1.5px solid currentColor;
+  font-size: 1rem;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: transform 0.25s;
+}
+.wc-expand[open] .wc-expand-icon { transform: rotate(45deg); }
+.wc-included {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  padding-top: 0.6rem;
+}
+.wc-note {
+  font-size: 0.8rem;
+  color: var(--sage-dark);
+  margin-top: auto;
+  padding-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.wc-cta {
+  display: block;
+  text-align: center;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 0.75rem;
+  padding: 0.875rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.25s;
+  margin-bottom: 0.5rem;
+}
+.wc-cta:hover { background: var(--sage-dark); }
+.wc-fine {
+  font-size: 0.78rem;
+  color: var(--ink-mute);
+  text-align: center;
+  font-style: italic;
 }
 
 /* ---------- Flagship package cards ---------- */
