@@ -197,6 +197,70 @@ h1.font-display { letter-spacing: -0.02em; }
   background: var(--sage-dark);
 }
 
+/* ---------- Flagship package cards ---------- */
+.flagship-card {
+  background: var(--ink);
+  border-radius: 1.5rem;
+  padding: 1.75rem 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.flagship-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--sage);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.85rem;
+  border-radius: 9999px;
+  width: fit-content;
+  margin-bottom: 1.1rem;
+}
+.flagship-title {
+  font-family: "Fraunces", serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 0.45rem;
+}
+.flagship-price {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--sage-light);
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.flagship-desc {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.6;
+  flex: 1;
+  margin-bottom: 1.5rem;
+}
+.flagship-btn {
+  display: block;
+  text-align: center;
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.85rem;
+  padding: 0.85rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.25s, border-color 0.25s, color 0.25s;
+  margin-top: auto;
+}
+.flagship-btn:hover {
+  background: var(--sage);
+  border-color: var(--sage);
+  color: #fff;
+}
+
 .service-icon {
   flex-shrink: 0;
   width: 38px; height: 38px;
