@@ -315,7 +315,7 @@ h1.font-display { letter-spacing: -0.02em; }
 .flagship-price {
   font-weight: 700;
   font-size: 0.95rem;
-  color: var(--sage-light);
+  color: #fff;
   font-style: italic;
   margin-bottom: 1rem;
 }
