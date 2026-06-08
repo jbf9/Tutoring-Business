@@ -257,7 +257,7 @@ h1.font-display { letter-spacing: -0.02em; }
 .wc-cta {
   display: block;
   text-align: center;
-  background: var(--ink);
+  background: var(--sage);
   color: #fff;
   border-radius: 0.75rem;
   padding: 0.875rem 1rem;
