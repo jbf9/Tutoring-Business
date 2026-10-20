@@ -10,12 +10,32 @@
    ------------------------------------------------------------- */
 const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyCXBbRYzeYn_pcEOM1XUREd72qIfN8F16-3O7HMis0JeNijmnfNFN7Z78JtxhW7Co/exec";
 
+/* -------------------------------------------------------------
+   2. REVIEWS — add a new review by copying one of these blocks.
+   ------------------------------------------------------------- */
+const REVIEWS = [
+  {
+    name: "Owen",
+    grade: "12th grade",
+    subject: "SAT",
+    quote:
+      "I had an amazing experience with Janet! In only 10 sessions, I was able to increase my SAT score by 110 points. I learned critical skills and strategies that helped me be successful on the exam that I did not learn from anywhere else. I would highly recommend Janet for anyone who is looking to be successful on their SAT exam or with anything else in academics.",
+  },
+  {
+    name: "Frank",
+    grade: "12th grade",
+    subject: "SAT",
+    quote:
+      "Super Sharp, knows her stuff. Now let's break 1500! Really excited everything there is an unlock I feel like \"that has gotta be a ten point jump right there!\". Hope to keep getting more of those and of course the necessary hundreds of practice questions. Thanks.",
+  },
+];
+
 document.addEventListener("DOMContentLoaded", () => {
   initYear();
   initNav();
   initMobileMenu();
   initReveal();
-  initServiceCards();
+  initReviews();
   initForm();
 });
 
@@ -83,26 +103,64 @@ function initReveal() {
   items.forEach((el) => io.observe(el));
 }
 
-/* ---------- Expandable service cards ---------- */
-function initServiceCards() {
-  document.querySelectorAll("[data-service]").forEach((card) => {
-    const head = card.querySelector(".service-head");
-    const body = card.querySelector(".service-body");
-    if (!head || !body) return;
+/* ---------- Reviews carousel ---------- */
+function initReviews() {
+  const root = document.getElementById("reviewCarousel");
+  if (!root || !REVIEWS.length) return;
 
-    head.addEventListener("click", () => {
-      const isOpen = card.classList.toggle("is-open");
-      head.setAttribute("aria-expanded", String(isOpen));
-      body.style.maxHeight = isOpen ? body.scrollHeight + "px" : null;
-    });
+  const card = root.querySelector(".review-card");
+  const quote = document.getElementById("reviewQuote");
+  const name = document.getElementById("reviewName");
+  const meta = document.getElementById("reviewMeta");
+  const tag = document.getElementById("reviewTag");
+  const counter = document.getElementById("reviewCounter");
+  const dotsWrap = document.getElementById("reviewDots");
+  const n = REVIEWS.length;
+  let currentIndex = 0;
+
+  const dots = REVIEWS.map((_, i) => {
+    const d = document.createElement("button");
+    d.type = "button";
+    d.className = "review-dot";
+    d.setAttribute("aria-label", `Show review ${i + 1}`);
+    d.addEventListener("click", () => go(i));
+    dotsWrap.appendChild(d);
+    return d;
   });
 
-  // keep open card sized correctly on resize
-  window.addEventListener("resize", () => {
-    document.querySelectorAll("[data-service].is-open .service-body").forEach((b) => {
-      b.style.maxHeight = b.scrollHeight + "px";
+  function render() {
+    const r = REVIEWS[currentIndex];
+    quote.textContent = r.quote;
+    name.textContent = r.name;
+    meta.textContent = `· ${r.grade}`;
+    tag.textContent = r.subject;
+    counter.textContent = `${currentIndex + 1} / ${n}`;
+    dots.forEach((d, i) => {
+      const active = i === currentIndex;
+      d.classList.toggle("is-active", active);
+      d.setAttribute("aria-current", active ? "true" : "false");
     });
+  }
+
+  // short crossfade between reviews
+  function go(i) {
+    if (i === currentIndex) return;
+    currentIndex = i;
+    card.classList.add("is-fading");
+    setTimeout(() => {
+      render();
+      card.classList.remove("is-fading");
+    }, 200);
+  }
+
+  document.getElementById("reviewPrev").addEventListener("click", () => go((currentIndex - 1 + n) % n));
+  document.getElementById("reviewNext").addEventListener("click", () => go((currentIndex + 1) % n));
+  root.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowLeft") go((currentIndex - 1 + n) % n);
+    if (e.key === "ArrowRight") go((currentIndex + 1) % n);
   });
+
+  render();
 }
 
 /* ---------- Contact form ---------- */

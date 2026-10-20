@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>6&ndash;12 Tutoring &middot; Janet Federici &mdash; Private 1:1 Tutoring</title>
-  <meta name="description" content="Private, one-on-one tutoring with Janet Federici for grades 6&ndash;12. SAT &amp; college prep, math, English, select AP courses, and Japanese or Korean." />
+  <meta name="description" content="Private, one-on-one tutoring with Janet Federici for grades 6&ndash;12. SAT prep, math, and English Language Arts." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,6 +47,13 @@
 
   <!-- ============ NAVIGATION ============ -->
   <header id="nav" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+    <!-- Announcement bar -->
+    <div class="notice-bar">
+      <div class="mx-auto max-w-content px-6 lg:px-10 flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 text-center">
+        <span>&#9733; <strong class="font-bold">Notice:</strong> Lessons end on Dec 31. New students can enroll until November 1. Spots are limited!</span>
+        <a href="#contact" class="notice-link">Save a spot &rarr;</a>
+      </div>
+    </div>
     <nav class="mx-auto max-w-content px-6 lg:px-10 flex items-center justify-between h-20">
       <a href="#top" class="group font-display text-lg sm:text-xl font-semibold tracking-tight whitespace-nowrap">
         6&ndash;12 Tutoring 
@@ -54,10 +61,11 @@
       </a>
 
       <!-- Desktop links -->
-      <ul class="hidden md:flex items-center gap-9 text-sm font-medium">
+      <ul class="hidden md:flex items-center gap-7 lg:gap-9 text-sm font-medium">
         <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#services" class="nav-link">Programs &amp; Workshops</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#rates" class="nav-link">Rates</a></li>
+        <li><a href="#payments" class="nav-link">Payments</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
         <li>
           <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-ink text-canvas px-5 py-2.5 hover:bg-sage transition-colors duration-300">
             Get in touch
@@ -76,8 +84,9 @@
     <div id="mobileMenu" class="md:hidden hidden bg-paper border-t border-black/5">
       <ul class="px-6 py-6 space-y-1 text-lg font-display">
         <li><a href="#about" class="mobile-link">About</a></li>
-        <li><a href="#services" class="mobile-link">Programs &amp; Workshops</a></li>
-        <li><a href="#contact" class="mobile-link">Contact</a></li>
+        <li><a href="#rates" class="mobile-link">Rates</a></li>
+        <li><a href="#payments" class="mobile-link">Payments</a></li>
+        <li><a href="#reviews" class="mobile-link">Reviews</a></li>
         <li class="pt-3">
           <a href="#contact" class="block text-center rounded-full bg-sage text-white py-3 font-body text-base">Get in touch</a>
         </li>
@@ -88,7 +97,7 @@
   <main id="top">
 
     <!-- ============ HERO ============ -->
-    <section class="relative overflow-hidden pt-36 pb-24 lg:pt-48 lg:pb-32">
+    <section class="relative overflow-hidden pt-48 pb-24 lg:pt-56 lg:pb-32">
       <!-- soft decorative blob -->
       <div class="hero-orb" aria-hidden="true"></div>
 
@@ -114,13 +123,13 @@
             Get in touch
             <span class="transition-transform group-hover:translate-x-1" aria-hidden="true">&rarr;</span>
           </a>
-          <a href="#services" class="inline-flex items-center gap-2 rounded-full border border-ink/20 px-7 py-4 text-base font-medium hover:border-sage hover:text-sage transition-colors duration-300">
+          <a href="#rates" class="inline-flex items-center gap-2 rounded-full border border-ink/20 px-7 py-4 text-base font-medium hover:border-sage hover:text-sage transition-colors duration-300">
             View services &amp; rates
           </a>
         </div>
 
         <!-- quick stats strip -->
-        <div class="reveal mt-16 grid grid-cols-2 sm:grid-cols-4 gap-px bg-ink/10 rounded-2xl overflow-hidden border border-ink/10">
+        <div class="reveal mt-16 grid grid-cols-1 sm:grid-cols-3 gap-px bg-ink/10 rounded-2xl overflow-hidden border border-ink/10">
           <div class="bg-canvas px-6 py-6">
             <div class="font-display text-3xl">1:1</div>
             <div class="text-sm text-ink-mute mt-1">Always personal</div>
@@ -130,12 +139,8 @@
             <div class="text-sm text-ink-mute mt-1">Grade levels</div>
           </div>
           <div class="bg-canvas px-6 py-6">
-            <div class="font-display text-3xl">5</div>
+            <div class="font-display text-3xl">3</div>
             <div class="text-sm text-ink-mute mt-1">Subject areas offered</div>
-          </div>
-          <div class="bg-canvas px-6 py-6">
-            <div class="font-display text-3xl">2</div>
-            <div class="text-sm text-ink-mute mt-1">Languages offered</div>
           </div>
         </div>
       </div>
@@ -163,18 +168,17 @@
 
             <!-- EDITABLE: your introduction -->
             <div class="mt-6 space-y-4 text-lg text-ink-soft leading-relaxed max-w-2xl">
-              <p></p>
+              <p>
                 <em>I believe every student already has what they need to succeed; my job is
-                to help them realize that.</em> 
-                <p>
-                </p>
-                Whether we're untangling a geometry proof,
-                editing a college essay, or diving into a new language, I tailor each session 
-                to how your student learns best (and I push them a little).
+                to help them realize that.</em>
               </p>
               <p>
-                Sessions are structured, in-depth, and always encouraging. We set clear
-                goals, track your progress, and celebrate your big and small wins along the way.
+                Whether we're solving for x, practicing SAT timing strategies, or editing a college essay,
+                I tailor each session to how your student learns best (and I push them a little, of course).
+              </p>
+              <p>
+                Sessions are structured, in-depth, and always encouraging. I help your student set clear
+                goals, track their progress, and celebrate their big and small wins along the way.
               </p>
             </div>
 
@@ -260,285 +264,187 @@
       </div>
     </section>
 
-    <!-- ============ SERVICES ============ -->
-    <section id="services" class="py-24 lg:py-32">
+    <!-- ============ TUTORING & RATES ============ -->
+    <section id="rates" class="py-24 lg:py-32">
       <div class="mx-auto max-w-content px-6 lg:px-10">
-        <div class="space-y-16">
-          <div class="reveal max-w-2xl">
-            <p class="section-eyebrow"><span>02</span> Programs &amp; Workshops</p>
-            <h2 class="font-display font-light text-4xl lg:text-5xl leading-tight mt-4">
-              Three ways to start, one personal approach
-            </h2>
-            <p class="mt-5 text-lg text-ink-soft leading-relaxed">
-              Looking for something fresh and fun this summer? Get started with one of my small-group workshops.
-              They're also the perfect way to get a taste of my teaching in case you're interested
-              in a longer program for school work or the SAT.
+        <div class="reveal max-w-2xl">
+          <p class="section-eyebrow"><span>02</span> Tutoring &amp; rates</p>
+          <h2 class="font-display font-light text-4xl lg:text-5xl leading-tight mt-4">
+            Three subjects, one personal approach
+          </h2>
+          <h3 class="font-display text-2xl leading-snug mt-8 flex items-center gap-3">
+            <span aria-hidden="true">📅</span> Booking 1:1 sessions for the school year
+          </h3>
+          <!-- EDITABLE -->
+          <p class="mt-4 text-lg text-ink-soft leading-relaxed">
+            Every lesson is 50 minutes, one&#8209;on&#8209;one, and planned around your student&rsquo;s goals.
+            I&rsquo;m off to South Korea on my Fulbright in January, so I&rsquo;d love to help your child up
+            their grades and establish good study skills before I go!
+          </p>
+        </div>
+
+        <!-- Rate menu. EDITABLE: titles, descriptions, and prices -->
+        <div class="rate-menu reveal mt-12">
+          <div class="rate-row">
+            <div class="flex gap-4 items-start">
+              <span class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l9-4 9 4-9 4-9-4z" stroke-linejoin="round"/><path d="M7 10.5V15c0 1.6 2.2 2.8 5 2.8s5-1.2 5-2.8v-4.5" stroke-linecap="round"/><path d="M21 8v5" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <h4 class="rate-title">SAT Prep</h4>
+                <p class="rate-desc">A targeted study plan for reading and math with daily practice problems, bi-weekly full-length practice tests, and test-taking strategies.</p>
+              </div>
+            </div>
+            <p class="rate-price"><span>$45</span><span class="rate-unit">/50-min lesson</span></p>
+          </div>
+
+          <div class="rate-row">
+            <div class="flex gap-4 items-start">
+              <span class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 5h7v15H6a2 2 0 0 1-2-2V5z" stroke-linejoin="round"/><path d="M20 5h-7v15h5a2 2 0 0 0 2-2V5z" stroke-linejoin="round"/><path d="M11 5c0-1 1-2 2-2" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <h4 class="rate-title">Math</h4>
+                <p class="rate-desc">Homework support, concept reteaching, and test prep for coursework, from middle school math through Algebra 1 and 2, geometry, trigonometry, and calculus.</p>
+              </div>
+            </div>
+            <p class="rate-price"><span>$30</span><span class="rate-unit">/50-min lesson</span></p>
+          </div>
+
+          <div class="rate-row">
+            <div class="flex gap-4 items-start">
+              <span class="service-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19V6a2 2 0 0 1 2-2h9l5 5v10" stroke-linejoin="round"/><path d="M15 4v5h5" stroke-linejoin="round"/><path d="M8 13h8M8 16h5" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <h4 class="rate-title">English Language Arts</h4>
+                <p class="rate-desc">Homework support, writing feedback, concept reteaching, and test prep for English Language Arts coursework.</p>
+              </div>
+            </div>
+            <p class="rate-price"><span>$30</span><span class="rate-unit">/50-min lesson</span></p>
+          </div>
+
+          <div class="rate-foot">
+            <p>&rarr; Prepping for the SAT? Pay monthly and save 10%. <a href="#payments" class="text-sage-light font-semibold underline underline-offset-2">See how</a></p>
+            <a href="#contact" class="inline-flex items-center gap-2 rounded-full bg-sage text-white px-5 py-2.5 text-sm font-medium hover:bg-sage-dark transition-colors duration-300">
+              Get in touch <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PAYMENTS ============ -->
+    <section id="payments" class="py-24 lg:py-32 bg-paper border-y border-black/5">
+      <div class="mx-auto max-w-content px-6 lg:px-10">
+        <div class="reveal max-w-2xl">
+          <p class="section-eyebrow"><span>03</span> Payments</p>
+          <h2 class="font-display font-light text-4xl lg:text-5xl leading-tight mt-4">
+            Simple, upfront, and <span class="italic text-sage">easy</span> to plan around.
+          </h2>
+          <p class="mt-5 text-lg text-ink-soft leading-relaxed">
+            It&rsquo;s easy and convenient to schedule and pay for lessons. Here&rsquo;s how:
+          </p>
+        </div>
+
+        <div class="pay-grid mt-12">
+          <!-- How it works -->
+          <div class="pay-steps reveal">
+            <p class="mini-label">How it works</p>
+            <div class="pay-step">
+              <span class="pay-num">1</span>
+              <div>
+                <h4 class="pay-step-title">We schedule your lessons</h4>
+                <p class="pay-step-body">After a quick chat, we pick a weekly time that works for your student.</p>
+              </div>
+            </div>
+            <div class="pay-step">
+              <span class="pay-num">2</span>
+              <div>
+                <h4 class="pay-step-title">You pay the night before</h4>
+                <p class="pay-step-body">Send payment by 11:59 pm the night before each lesson, or pay for the month upfront.</p>
+              </div>
+            </div>
+            <div class="pay-step">
+              <span class="pay-num">3</span>
+              <div>
+                <h4 class="pay-step-title">Your student shows up ready</h4>
+                <p class="pay-step-body">I&rsquo;ll have a lesson planned around their goals, classes, and upcoming tests.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Payment due -->
+          <div class="pay-due reveal">
+            <p class="mini-label text-sage-light">Payment due</p>
+            <p class="font-display font-light text-[2.4rem] leading-[1.1] tracking-[-0.02em]">
+              By 11:59 pm the night <span class="italic text-sage-light">before</span> each lesson.
+            </p>
+            <p class="text-[0.95rem] leading-relaxed text-canvas/80">
+              If payment isn&rsquo;t received by then, we&rsquo;ll reschedule the lesson to another time that works for both your student and me.
+            </p>
+            <div class="pay-methods">
+              <p class="mini-label text-sage-light mb-3">I accept</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="pay-pill">Venmo</span>
+                <span class="pay-pill">Zelle</span>
+                <span class="pay-pill">PayPal</span>
+                <span class="pay-pill">Check</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SAT monthly plan -->
+        <div class="pay-plan reveal mt-6">
+          <div>
+            <span class="tag">SAT monthly plan</span>
+            <h4 class="font-display text-[1.65rem] leading-tight tracking-[-0.01em] mt-[0.9rem]">8 SAT lessons a month, paid upfront</h4>
+            <p class="mt-2 text-[0.95rem] leading-relaxed text-ink-soft">
+              Pay for 8 SAT lessons at the start of each month and save 10%. That&rsquo;s two lessons a week and no night-before payments to remember.
             </p>
           </div>
-
-          <div>
-            <div class="reveal">
-              <div class="flex flex-wrap items-baseline gap-x-5 gap-y-1">
-                <h3 class="font-display text-3xl lg:text-4xl leading-tight whitespace-nowrap">
-                  <span aria-hidden="true">🌱</span> Start here this summer
-                </h3>
-                <p class="text-base text-ink-soft leading-relaxed">
-                  Low-commitment ways to get going right now. 3-6 students at the Back Mountain Library.
-                </p>
-              </div>
-            </div>
-
-            <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 items-start">
-              <!-- Workshop 1: Hello, Hangul -->
-              <article class="wc-card reveal">
-                <div class="wc-top">
-                  <span class="wc-tag">Language</span>
-                  <span class="wc-price">$100 <span class="wc-price-unit">/ student</span></span>
-                </div>
-                <h4 class="wc-title">Hello, Hangul</h4>
-                <p class="wc-desc">Has your child been singing K-Pop non-stop? Enroll them in this introductory 4-week workshop 
-                  where I teach them the Korean writing system, Hangul, in a fun, supportive group setting. I've studied Korean 
-                  for 8+ years and won a Fulbright Scholarship to South Korea; I'm excited to share my love of Korean with your
-                  student!</p>
-                <details class="wc-expand">
-                  <summary><span class="wc-expand-icon">+</span> What&rsquo;s included</summary>
-                  <div class="wc-included">
-                    <p>Live 50-min lessons once a week for 4 weeks. Guided Hangul reading instruction and short homework assignments outside of class. Students may request a workshop for their group of friends. Contact janet@tutoringbyjanet.com to arrange it!</p>
-                  </div>
-                </details>
-                <p class="wc-note">&rarr; Workshop students get first pick of weekly Korean tutoring slots this fall.</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSet8JzngCKZ7PC6Re7AvOjCNbNGmG7JL9A-zkgpqCSwqHxajA/viewform?usp=preview" target="_blank" rel="noopener noreferrer" class="wc-cta">Reserve a spot</a>
-                <p class="wc-fine">Dates and times will fit with students' schedules</p>
-              </article>
-
-              <!-- Workshop 2: Hello, Hiragana -->
-              <article class="wc-card reveal">
-                <div class="wc-top">
-                  <span class="wc-tag">Language</span>
-                  <span class="wc-price">$100 <span class="wc-price-unit">/ student</span></span>
-                </div>
-                <h4 class="wc-title">Hello, Hiragana</h4>
-                <p class="wc-desc">Into anime now after playing Nintendo games for years? Your student might want to learn Japanese! Join this 4-week workshop for
-                  beginners to learn Hiragana from me, a Japanese major who spent a semester in a Japanese langauge intensive program in Nagoya, Japan.
-                </p>
-                <details class="wc-expand">
-                  <summary><span class="wc-expand-icon">+</span> What&rsquo;s included</summary>
-                  <div class="wc-included">
-                    <p>Live 50-min lessons once a week for 4 weeks. Guided Hiragana reading and writing instruction with short homework assignments. Students may request a workshop for their group of friends. Contact janet@tutoringbyjanet.com to arrange it!</p>
-                  </div>
-                </details>
-                <p class="wc-note">&rarr; First pick of weekly Japanese tutoring slots this fall.</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSehIiiwsUFNVO6yvn42BsbCoUqk9AjjR6f3Up2Mdat7qIMl7A/viewform?usp=sharing&ouid=105802396746857966744" target="_blank" rel="noopener noreferrer" class="wc-cta">Reserve a spot</a>
-                <p class="wc-fine">Dates and times will fit with students' schedules</p>
-              </article>
-
-              <!-- Workshop 3: SAT & College Admissions -->
-              <article class="wc-card reveal">
-                <div class="wc-top">
-                  <span class="wc-tag">SAT &middot; Admissions</span>
-                  <span class="wc-price">Free</span>
-                </div>
-                <h4 class="wc-title">SAT &amp; College Admissions Workshops</h4>
-                <p class="wc-desc">Multiple one-off workshops on the college admissions process, the digital SAT, and college essay writing. Dates and time will be announced by mid-June.</p>
-                <details class="wc-expand">
-                  <summary><span class="wc-expand-icon">+</span> What&rsquo;s included</summary>
-                  <div class="wc-included">
-                    <p>One-off sessions of 60 minutes each on select dates. Walk away with actionable tips and next steps for your student&rsquo;s college admissions journey.</p>
-                  </div>
-                </details>
-                <p class="wc-note">&rarr; Workshop attendees get priority for SAT and college counseling packages.</p>
-                <a href="#contact" class="wc-cta">I'm interested!</a>
-                <p class="wc-fine">Schedule will be announced soon.</p>
-              </article>
-            </div>
+          <div class="flex flex-col items-start gap-1.5">
+            <p class="flex flex-wrap items-baseline gap-2">
+              <span class="font-display font-light text-[3.25rem] leading-none tracking-[-0.02em]">$324</span>
+              <span class="text-[0.85rem] text-ink-mute whitespace-nowrap">/ month</span>
+              <s class="text-[0.95rem] text-ink-mute whitespace-nowrap">$360</s>
+            </p>
+            <p class="font-bold text-sage-dark text-[0.95rem]">&rarr; Save 10% ($36 every month)</p>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Flagship Packages -->
-          <div>
-            <div class="reveal max-w-2xl">
-              <h3 class="font-display text-3xl lg:text-4xl leading-tight flex items-center gap-3">
-                <span aria-hidden="true">📅</span> Booking 1:1 student sessions for fall
-              </h3>
-              <p class="mt-4 text-lg text-ink-soft leading-relaxed">
-                My two signature programs open in August. I'm off to South Korea on my Fulbright in January, so I'd love
-                to help your child build good study skills before I go!
-              </p>
+    <!-- ============ REVIEWS ============ -->
+    <section id="reviews" class="py-24 lg:py-32">
+      <div class="mx-auto max-w-content px-6 lg:px-10">
+        <div class="reveal max-w-2xl">
+          <p class="section-eyebrow"><span>04</span> Reviews</p>
+          <h2 class="font-display font-light text-4xl lg:text-5xl leading-tight mt-4">
+            In my students&rsquo; <span class="italic text-sage">own</span> words
+          </h2>
+        </div>
+
+        <!-- Carousel. Reviews live in the REVIEWS list at the top of main.js -->
+        <div class="reveal mt-12" id="reviewCarousel" aria-roledescription="carousel" aria-label="Student reviews">
+          <figure class="review-card">
+            <span class="review-mark" aria-hidden="true">&ldquo;</span>
+            <blockquote class="review-quote" id="reviewQuote" aria-live="polite"></blockquote>
+            <figcaption class="flex flex-wrap items-center gap-3">
+              <span class="font-bold text-[1.05rem]" id="reviewName"></span>
+              <span class="text-ink-mute" id="reviewMeta"></span>
+              <span class="tag" id="reviewTag"></span>
+            </figcaption>
+          </figure>
+          <div class="mt-6 flex flex-wrap items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+              <div class="flex items-center gap-2" id="reviewDots"></div>
+              <span class="ml-3 font-display text-base text-ink-mute" id="reviewCounter"></span>
             </div>
-
-            <div class="mt-8 grid gap-6 sm:grid-cols-2 items-start">
-              <!-- SAT Intensive -->
-              <div class="flagship-card reveal">
-                <div class="flagship-badge">★ Limited spots before my Fulbright</div>
-                <h4 class="flagship-title">1:1 SAT Intensive</h4>
-                <p class="flagship-price">$400 &middot; Flexible start &middot; Perfect for Aug SAT!</p>
-                <p class="flagship-desc">A complete, ten-week path to test day: full diagnostic, every section of the digital SAT, five scored practice tests, and test-day strategy. 
-                  A double-track option (2&times;/week, $800) is available for a bigger jump.</p>
-                <a href="#contact" class="flagship-btn">Let me know you're interested!</a>
-              </div>
-
-              <!-- First Semester Success -->
-              <div class="flagship-card reveal">
-                <div class="flagship-badge">★ Limited spots before my Fulbright</div>
-                <h4 class="flagship-title">1:1 First Semester Success</h4>
-                <p class="flagship-price">$420 &middot; 14 weeks &middot; Sept&ndash;winter break</p>
-                <p class="flagship-desc">Private weekly sessions in 6-12 math and/or English. I help your child build the study habits and independence that keep the momentum going after winter break. 
-                  Let's get those A's! Twice-weekly track ($840) available.</p>
-                <a href="#contact" class="flagship-btn">Let me know you're interested!</a>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <div class="reveal max-w-2xl">
-              <h3 class="font-display text-3xl lg:text-4xl leading-tight">Want something just for you?</h3>
-              <p class="mt-4 text-lg text-ink-soft leading-relaxed">
-                I also offer private, hourly tutoring in these subject areas on a monthly subscription basis. Each session is personalized 
-                to your student's needs and goals, and we work together to build a plan that fits your schedule and budget.
-              </p>
-            </div>
-
-            <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 items-start">
-              <!-- 1. SAT & College -->
-              <article class="service-card reveal" data-service>
-                <button class="service-head" aria-expanded="false">
-                  <span class="service-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l9-4 9 4-9 4-9-4z" stroke-linejoin="round"/><path d="M7 10.5V15c0 1.6 2.2 2.8 5 2.8s5-1.2 5-2.8v-4.5" stroke-linecap="round"/><path d="M21 8v5" stroke-linecap="round"/></svg>
-                  </span>
-                  <span class="flex-1">
-                    <span class="service-title">SAT &amp; College Application Prep</span>
-                    <span class="service-price">$40<span>/50 mins</span></span>
-                  </span>
-                  <span class="service-chev" aria-hidden="true">+</span>
-                </button>
-                <div class="service-body">
-                  <div class="service-body-inner">
-                    <p class="service-label">What you get</p>
-                    <p><strong><em>SAT Success:</em></strong> Targeted study plan for reading and math with daily practice problems, bi-weekly full-length practice tests, and test-taking strategies.</p>
-                    <p><strong><em>College App Support:</em></strong> Balanced college list-building; essay brainstorming, drafting, and editing; and alumni interview prep.</p>
-                    <p class="service-label mt-4">My background</p>
-                    <p>I scored in the 99th percentile on the SAT with a 1450 (770 Reading, 680 Math). I understand the nuances of each section and can provide tailored strategies for success.
-                      For college admissions, I was a tour guide at my university and a college advising fellow at Matriculate, an organization that connects high schoolers with college students highly-trained in admissions.
-                      I have a knack for punchy, impactful writing that moves admissions officers with your student's story.
-                    </p>
-                  </div>
-                </div>
-              </article>
-
-              <!-- 2. HS Math & English -->
-              <article class="service-card reveal" data-service>
-                <button class="service-head" aria-expanded="false">
-                  <span class="service-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 5h7v15H6a2 2 0 0 1-2-2V5z" stroke-linejoin="round"/><path d="M20 5h-7v15h5a2 2 0 0 0 2-2V5z" stroke-linejoin="round"/><path d="M11 5c0-1 1-2 2-2" stroke-linecap="round"/></svg>
-                  </span>
-                  <span class="flex-1">
-                    <span class="service-title">High School Math &amp; English</span>
-                    <span class="service-price">$30<span>/50 mins</span></span>
-                  </span>
-                  <span class="service-chev" aria-hidden="true">+</span>
-                </button>
-                <div class="service-body">
-                  <div class="service-body-inner">
-                    <p class="service-label">What you get</p>
-                    <p>Homework support, concept reteaching, writing feedback, and test prep for coursework.
-                      Expertise in English Language Arts (literature, writing papers, grammar and vocabulary) 
-                      and math (Algebra 1 and 2, geometry, trigonometry, calculus).</p>
-                    <p class="service-label mt-4">My background</p>
-                    <p>I have tutored high school students in both math and English for 6 years, accumulating hundreds of hours of experience 
-                      helping them improve their grades and build confidence in their abilities. It's the best feeling in the world helping 
-                      my students get a 100% on a test after thinking they wouldn't do well!</p>
-                  </div>
-                </div>
-              </article>
-
-              <!-- 3. AP Courses -->
-              <article class="service-card reveal" data-service>
-                <button class="service-head" aria-expanded="false">
-                  <span class="service-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l2.5 5.2 5.5.8-4 3.9 1 5.6-5-2.7-5 2.7 1-5.6-4-3.9 5.5-.8L12 3z" stroke-linejoin="round"/></svg>
-                  </span>
-                  <span class="flex-1">
-                    <span class="service-title">Select AP Courses</span>
-                    <span class="service-price">$35<span>/50 mins</span></span>
-                  </span>
-                  <span class="service-chev" aria-hidden="true">+</span>
-                </button>
-                <div class="service-body">
-                  <div class="service-body-inner">
-                    <p class="service-label">What you get</p>
-                    <p>A mixture of homework help and structured exam preparation, including practice exams, 
-                      FRQ/essay strategy, pacing, and review for your AP courses.</p>
-                    <p class="service-label mt-4">Subjects &amp; background</p>
-                    <p><strong><em>AP Subjects Offered (my score):</em></strong> AP Biology (5), AP US Government and Politics (5), 
-                      AP Statistics (4), AP English Literature (4), AP English Language (4)</p>
-                  </div>
-                </div>
-              </article>
-
-              <!-- 4. MS Math & English -->
-              <article class="service-card reveal" data-service>
-                <button class="service-head" aria-expanded="false">
-                  <span class="service-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19V6a2 2 0 0 1 2-2h9l5 5v10" stroke-linejoin="round"/><path d="M15 4v5h5" stroke-linejoin="round"/><path d="M8 13h8M8 16h5" stroke-linecap="round"/></svg>
-                  </span>
-                  <span class="flex-1">
-                    <span class="service-title">Middle School Math &amp; English</span>
-                    <span class="service-price">$30<span>/50 mins</span></span>
-                  </span>
-                  <span class="service-chev" aria-hidden="true">+</span>
-                </button>
-                <div class="service-body">
-                  <div class="service-body-inner">
-                    <p class="service-label">What you get</p>
-                    <p>Homework support, concept reteaching, writing feedback, and test prep for math (Algebra 1 and 2, advanced math), 
-                      English Language Arts, geography, and music. Let's build strong foundations and study skills for the transition ahead!</p>
-                    <p class="service-label mt-4">My background</p>
-                    <p>Experienced in working with diverse learners to first meet them where they are and then build from there! I know
-                      how tough middle school is both socially and academically, so I prioritize creating a supportive, encouraging 
-                      environment for my middle school students to grow their skills and confidence.
-                    </p>
-                  </div>
-                </div>
-              </article>
-
-              <!-- 5. Japanese or Korean -->
-              <article class="service-card reveal" data-service>
-                <button class="service-head" aria-expanded="false">
-                  <span class="service-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18" stroke-linecap="round"/></svg>
-                  </span>
-                  <span class="flex-1">
-                    <span class="service-title">Japanese or Korean</span>
-                    <span class="service-price">$30<span>/50 mins</span></span>
-                  </span>
-                  <span class="service-chev" aria-hidden="true">+</span>
-                </button>
-                <div class="service-body">
-                  <div class="service-body-inner">
-                    <p class="service-label">What you get</p>
-                    <p>Has your student been reading the latest manga at the Back Mountain Library? Gotten into K-Pop?
-                      These structured language lessons are designed for beginners to build a strong foundation. We'll start 
-                      from the basics of reading and pronunciation and build up to writing, grammar, and conversation practice. 
-                      (Textbook for Japanese: Tobira; for Korean: Yonsei)
-                    </p>
-                    <p class="service-label mt-4">My background</p>
-                    <p>Having earned a bachelors degree in Japanese and studied abroad in Japan for 5 months, I'm well-equipped
-                      to guide students through the basics and nuances of Japanese. I've also studied Korean since I was in 8th grade
-                      (8+ years now!), so I have a deep technical and intuitive grasp of the language.
-                    </p>
-                  </div>
-                </div>
-              </article>
-
-              <!-- CTA card to fill the 6th grid slot -->
-              <article class="reveal rounded-3xl bg-ink text-canvas p-8 flex flex-col justify-between min-h-[200px]">
-                <div>
-                  <p class="font-display text-2xl leading-snug">Not sure which fits?</p>
-                  <p class="mt-3 text-canvas/70 text-sm leading-relaxed">Tell me about the student and I&rsquo;ll recommend a plan.</p>
-                </div>
-                <a href="#contact" class="mt-6 inline-flex items-center gap-2 rounded-full bg-sage text-white px-5 py-3 text-sm font-medium self-start hover:bg-sage-light transition-colors">
-                  Get in touch <span aria-hidden="true">&rarr;</span>
-                </a>
-              </article>
+            <div class="flex gap-3">
+              <button type="button" class="review-btn review-prev" id="reviewPrev" aria-label="Previous review">&larr;</button>
+              <button type="button" class="review-btn review-next" id="reviewNext" aria-label="Next review">&rarr;</button>
             </div>
           </div>
         </div>
@@ -552,7 +458,7 @@
 
           <!-- Intro column -->
           <div class="reveal lg:col-span-5">
-            <p class="section-eyebrow"><span>04</span> Contact</p>
+            <p class="section-eyebrow"><span>05</span> Contact</p>
             <h2 class="font-display font-light text-4xl lg:text-5xl leading-tight mt-4">
               I'm excited to meet you and your student!
             </h2>
@@ -569,6 +475,16 @@
                 <svg class="w-5 h-5 text-sage shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
                 Serving local NEPA &amp; remote students
               </p>
+            </div>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="https://www.linkedin.com/in/janetfederici/" target="_blank" rel="noopener noreferrer" class="social-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM3.5 8.5h3v12h-3v-12zM9 8.5h2.87v1.64h.04A3.15 3.15 0 0 1 14.76 8.5c3.07 0 3.64 2.02 3.64 4.65v6.85h-3v-6.07c0-1.45-.03-3.3-2.01-3.3-2.02 0-2.33 1.58-2.33 3.2v6.17H9v-12z"/></svg>
+                LinkedIn
+              </a>
+              <a href="https://www.facebook.com/janet.federici.7" target="_blank" rel="noopener noreferrer" class="social-pill">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7.5v3H10v6h3v-6h2.5l.5-3H13v-2c0-.55.45-1 1-1z"/></svg>
+                Facebook
+              </a>
             </div>
             <img src="assets/janet2.jpg" alt="Janet Federici" class="mt-8 rounded-3xl w-full object-cover ring-1 ring-black/5 shadow-soft" />
           </div>
@@ -623,12 +539,9 @@
                 <div class="sm:col-span-2">
                   <span class="field-label">What would you like tutoring in? <span class="text-ink-mute font-normal">(select all that apply)</span></span>
                   <div class="flex flex-wrap gap-2.5 mt-1" id="subjects">
-                    <label class="chip"><input type="checkbox" name="subjects" value="SAT / College Applications" /><span>SAT / College Apps</span></label>
+                    <label class="chip"><input type="checkbox" name="subjects" value="SAT" /><span>SAT</span></label>
                     <label class="chip"><input type="checkbox" name="subjects" value="Math" /><span>Math</span></label>
-                    <label class="chip"><input type="checkbox" name="subjects" value="English" /><span>English</span></label>
-                    <label class="chip"><input type="checkbox" name="subjects" value="AP Courses" /><span>AP Courses</span></label>
-                    <label class="chip"><input type="checkbox" name="subjects" value="Japanese" /><span>Japanese</span></label>
-                    <label class="chip"><input type="checkbox" name="subjects" value="Korean" /><span>Korean</span></label>
+                    <label class="chip"><input type="checkbox" name="subjects" value="English Language Arts" /><span>English Language Arts</span></label>
                   </div>
                 </div>
 
